@@ -1,6 +1,6 @@
 import React from 'react';
 import TrailContext from '../Context';
-import cuid from 'cuid';
+import { v4 as uuidv4 } from 'uuid';
 
 
 export default class OpeningForm extends React.Component {
@@ -13,7 +13,7 @@ export default class OpeningForm extends React.Component {
         e.preventDefault();
         const { newHikeName } = e.target
         const newHike = {
-            id: cuid(),
+            id: uuidv4(),
             name: newHikeName.value,
             savedTracksIds: [],
         }

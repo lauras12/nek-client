@@ -1,7 +1,6 @@
 import React from 'react';
 import HikeContext from '../Context';
-import cuid from 'cuid';
-
+import { v4 as uuidv4 } from 'uuid';
 
 export default class HikeFullCard extends React.Component {
     static contextType = HikeContext;
@@ -39,7 +38,7 @@ export default class HikeFullCard extends React.Component {
         }
          
         const newTrackAttributes = {
-            id: cuid(),
+            id: uuidv4(),
             trackId,
             assignedHikeId: this.context.currentHike.id,
             attributesList: this.makeAttributesList(),
