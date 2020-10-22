@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HikeFullTrailCard component renders UI as expected 1`] = `
+<div
+  className="track-info"
+>
+  <h3
+    className="title"
+  />
+  <h3
+    className="title"
+  />
+  <div
+    className="text-container"
+  >
+    <p>
+      BENEFITS : 
+    </p>
+    <br />
+    <p>
+      LEVEL : 
+    </p>
+    <br />
+    <p>
+      TRACK TYPE : 
+    </p>
+    <br />
+  </div>
+  <div
+    className="iframe-container"
+  >
+    <iframe
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen={true}
+      className="resp-iframe"
+      frameBorder="0"
+      title="yoga pose instructions"
+    />
+  </div>
+  <div
+    className="bt-container"
+  >
+    <button
+      onClick={[Function]}
+    >
+      Back
+    </button>
+  </div>
+</div>
+`;

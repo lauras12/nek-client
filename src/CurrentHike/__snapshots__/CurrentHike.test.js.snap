@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CurrentHike component renders UI as expected 1`] = `
+<div
+  className="current-hike"
+>
+  <h2
+    className="title"
+  >
+    Current hike: 
+    UNDEFINED
+  </h2>
+  <button
+    id="hike-button"
+    onClick={[Function]}
+    type="button"
+  >
+    Back
+  </button>
+</div>
+`;

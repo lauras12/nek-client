@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TrackListItem component renders UI as expected 1`] = `
+<div
+  className="item"
+>
+  <li
+    className="li"
+    onClick={[Function]}
+  >
+    <h2>
+      chair
+    </h2>
+    <h2>
+      utkatasana
+    </h2>
+    <img
+      alt="track, asana"
+      src=""
+    />
+  </li>
+</div>
+`;

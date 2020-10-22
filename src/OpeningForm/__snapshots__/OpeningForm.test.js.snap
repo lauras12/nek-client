@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OpeningForm component renders UI as expected 1`] = `
+<div
+  className="form-container"
+>
+  <div
+    className="error"
+  />
+  <div
+    className="opening-form"
+  >
+    <form
+      className="hike-form"
+      onSubmit={[Function]}
+    >
+      <div
+        className="form__group1 field form-small-container"
+      >
+        <h3
+          className="hike-choice"
+        >
+          Create a new hike:
+        </h3>
+        <input
+          className="form__field"
+          id="newHikeName"
+          name="name"
+          placeholder="hike name"
+          type="input"
+        />
+      </div>
+      <div
+        className="button-container"
+      >
+        <button
+          type="submit"
+        >
+          enter 
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;

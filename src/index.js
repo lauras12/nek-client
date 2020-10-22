@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
+import * as serviceWorker from './serviceWorker';
 import {HikeContextProvider} from './Context';
 
 ReactDOM.render(
@@ -15,3 +16,4 @@ ReactDOM.render(
     document.getElementById('root')
 );
 
+serviceWorker.unregister();

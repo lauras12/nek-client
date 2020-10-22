@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TrackList component renders UI as expected 1`] = `
+<div
+  className="track-list"
+>
+  <div
+    className="error"
+  />
+  <h2
+    className="title"
+  >
+    TRACK LIBRARY: 
+  </h2>
+  <ul
+    className="track-container"
+  />
+</div>
+`;

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HikeTracksList component renders UI as expected 1`] = `
+<div>
+  <div
+    className="error"
+  />
+  <ul
+    className="hike-tracks-container"
+  />
+</div>
+`;

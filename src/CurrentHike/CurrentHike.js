@@ -1,29 +1,19 @@
 import React from 'react';
-import HikeContext from '../Context';
+import './CurrentHike.css';
+import TrailContext from '../Context';
 
-export default function CurrentHike() {
-   
-    return (
-        <HikeContext.Consumer>
-            {(value) => {
-                if(`${value.currentHike.name}` === null) {
-                    return (
-                        <div>PLEASE PICK A HIKE FIRST</div>
-                    )
-                    
-                } else {
-                    return(
-                        <div>
-                            <h2>Current Hike: {`${value.currentHike.name}`}</h2>
-                        </div>
-                    )
-                }
-                
-            }}    
-               
-                
-        
-    
-               </HikeContext.Consumer>
-    )
+export default class CurrentHike extends React.Component {
+    static contextType = TrailContext;
+    handleBack = () => {
+        this.props.history.push('/')
+    }
+    render() {
+        return (
+            <div className='current-hike'>
+                <h2 className='title'>Current hike: {`${this.context.currentHike.title}`.toUpperCase()}</h2>
+                <button type='button' id='hike-button' onClick={this.handleBack} >Back</button>
+            </div>
+        );
+    }
+
 }

@@ -1,30 +1,48 @@
 import React from 'react';
-import HikeContext from '../Context';
+import TrailContext from '../Context';
 import TrackListItem from '../TrackListItem/TrackListItem';
-
+import APITrackCalls from '../services/API_Track_service';
+import './TrackList.css';
 
 export default class TrackList extends React.Component {
-    static contextType = HikeContext;
-    
+    static contextType = TrailContext;
+    state = {
+        error: null,
+    }
+
+    componentDidMount = () => {
+        APITrackCalls.getAllTracksData()
+            .then(data => {
+                this.context.setTracksList(data);
+            })
+            .catch(res => {
+                this.setState({
+                    error: res
+                });
+            });
+    }
 
     render() {
-        console.log(this.context)
         const tracks = this.context.tracks.map(track => {
             return <TrackListItem
                 key={track.id}
                 id={track.id}
-                name={track.nameEng}
-                /*sanskrit={track.nameSan}
+                name={track.name_eng}
+                sanskrit={track.name_san}
                 img={track.img}
-                */
-            />
+            />;
+        });
 
-        })
         return (
-            <div>
-                <h2>Popular Tracks: </h2>
-                {tracks}
+            <div className='track-list'>
+                <div className='error'>
+                    {this.state.error ? this.state.error.message : null}
+                </div>
+                <h2 className='title' >TRACKS LIBRARY: </h2>
+                <ul className='tracks-container'>
+                    {tracks}
+                </ul>
             </div>
-        )
+        );
     }
 }

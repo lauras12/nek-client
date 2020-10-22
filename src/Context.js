@@ -1,104 +1,190 @@
 import React from 'react';
-import STORE from './store';
+import APIHikeCalls from './services/API_Hike_service';
 
 
-const HikeContext = React.createContext({
-
-    currentHike: '',
+const TrailContext = React.createContext({
+    currentHikeId: null,
+    currentHike: {},
     tracks: [],
     hikes: [],
+    openTrackCard: {},
+    hikeSelection: '',
+    setTracksList: () => { },
+    setHikesList: () => { },
+    setOpenTrackCard: () => { },
+    setAttributesIntoOpenCard: () => {},
+    setCurrentNewHike: () => { },
+    setCurrentHikeId: () => { },
+    setCurrentHike: () => { },
+    truncateCurrentHike: () => { },
     addHike: () => { },
     enterHike: () => { },
-    updateFullHike: () => { },
-    updateAttributes: () => { },
-    tracksAttributes: [],
-})
+    saveHikeSelection: () => {},
+    deleteTrackFromHike: () => {},
+    trackAttributes: [],
+});
 
-export default HikeContext;
+export default TrailContext;
 
 
 export class HikeContextProvider extends React.Component {
     constructor() {
-        super()
+        super();
         this.state = {
-            currentHike: null,
-            tracks: STORE.tracks,
-            hikes: STORE.hikes,
-            trackAttributes: STORE.attributes,
+            currentHikeId: null,
+            currentHike: {
+                id: null,
+                title: '',
+                assignedTracks: [],
+                warmUp: [],
+                midHike: [],
+                peakTrack: [],
+                breakTracks: [],
+                afterPeak: [],
+            },
+            openTrackCard: {
+                id: null,
+                name_eng: '',
+                alias: '',
+                name_san: '',
+                benefits: '',
+                track_type: '',
+                track_level: '',
+                img: '',
+                video: '',
+                attributesList: '',
+                notes: '',
+
+            },
+            tracks: [],
+            hikes: [],
+            trackAttributes: [],
+            hikeSelection: null,
             error: null,
-        }
+        };
     }
-    
-    
-    setError = (err) => {
+
+
+    setError = (res) => {
         this.setState({
-            error: err,
+            error: res,
+        });
+    }
+
+    enterHike = (hike) => {
+        this.setState({
+            currentHikeId: hike.id,
+            currentHike: {
+                id: hike.id,
+                title: hike.title,
+                assignedTracks: [],
+                peakTrack: [],
+                warmUp: [],
+                midHike: [],
+                breakTracks: [],
+                afterPeak: [],
+            }
+        });
+    }
+    saveHikeSelection = (hike) => {
+        this.setState({
+            hikeSelection: hike,
         })
+    }
+
+    setCurrentHike = (hike) => {
+        this.setState({
+            currentHikeId: hike.id,
+            currentHike: hike,
+        });
     }
     
     setTracksList = (data) => {
         this.setState({
             tracks: data,
-        })
-    }
-
-    
-    enterHike = (hike) => {
-        this.setState({
-            currentHike: hike,
-        })
-    }
-
-    addHike = (newHike) => {
-        this.setState({
-            hikes: [...this.state.hikes, newHike],
-            currentHike: newHike,
-        })
-    }
-
-    updateFullHike = (track, currentHike, sectionName) => {
-        const hikeSection = currentHike[sectionName];
-        const newHikeSection = [...hikeSection, track];
-        const updatedHike = { ...currentHike, [sectionName]: newHikeSection };
-        const updatedHikes = this.state.hikes.map(hike => {
-            if(hike.id === currentHike.id) {
-                return currentHike;
-            } else {
-                return hike;
-            }
-        })
-        
-        this.setState({
-            currentHike: {...updatedHike},
-            hikes: updatedHikes,
         });
     }
 
-    updateAttributes = (newAttributes) => {
+    setHikesList = (data) => {
         this.setState({
-            trackAttributes: [...this.state.trackAttributes, newAttributes],
-        })
+            hikes: data,
+        });
+    }
+
+    setOpenTrackCard = (data) => {
+         this.setState({
+            openTrackCard: {
+                id: data.id,
+                name_eng: data.name_eng,
+                alias: data.alias,
+                name_san: data.name_san,
+                benefits: data.benefits,
+                track_type: data.track_type,
+                track_level: data.track_level,
+                img: data.img,
+                video: data.video,
+                attributesList: data.attributesList,
+                notes: data.notes,
+            }
+        });
     }
 
 
+    deleteTrackFromHike = (id) => {
+        const newAssignedTracks = this.state.currentHike.assignedTracks.map(tracksArr => {
+            return tracksArr.filter(track => track !== id);
+        });
+
+        this.setState({
+            currentHike: {
+                ...this.state.currentHike,
+                assignedTracks: newAssignedTracks
+            }
+        });
+
+        const trackToDelete = id;
+        const hikeAimed = this.state.currentHikeId;
+        APIHikeCalls.deleteTrackFromHike(trackToDelete, hikeAimed)
+            .then(res => {
+                console.log('deleting TRACK FROM HIKE');
+            })
+            .catch(err => {
+                console.log(err)
+                this.setState({
+                    error: err,
+                });
+            });
+    }
+  
     render() {
+        
         const contextValue = {
-            setError: this.setError,
-            setTracksList: this.setTrackList,
+            openTrackCard: this.state.openTrackCard,
+            currentHikeId: this.state.currentHikeId,
             currentHike: this.state.currentHike,
             tracks: this.state.tracks,
             hikes: this.state.hikes,
+            hikeSelection: this.state.hikeSelection,
+            setError: this.setError,
+            truncateCurrentHike: this.truncateCurrentHike,
+            setCurrentHike: this.setCurrentHike,
+            setCurrentHikeId: this.setCurrentHikeId,
+            setTracksList: this.setTracksList,
+            setHikesList: this.setHikesList,
+            setOpenTrackCard: this.setOpenTrackCard,
+            setAttributesIntoOpenCard: this.setAttributesIntoOpenCard,
+            setCurrentNewHike: this.setCurrentNewHike,
             addHike: this.addHike,
             enterHike: this.enterHike,
-            updateAttributes: this.updateAttributes,
-            updateFullHike: this.updateFullHike,
+            saveHikeSelection: this.saveHikeSelection,
+            deleteTrackFromHike: this.deleteTrackFromHike,
             trackAttributes: this.state.trackAttributes,
-        }
+        };
 
         return (
-            <HikeContext.Provider value={contextValue}>
+            <TrailContext.Provider value={contextValue} >
                 {this.props.children}
-            </HikeContext.Provider>
-        )
+            </TrailContext.Provider >
+        );
     }
 }
