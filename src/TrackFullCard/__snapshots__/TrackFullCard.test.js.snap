@@ -45,12 +45,12 @@ exports[`TrackFullCard component renders UI as expected 1`] = `
       >
         <input
           className="input"
-          name="grounding-track"
+          name="warmup-track"
           onClick={[Function]}
           type="checkbox"
         />
         <label>
-          Grounding track
+          Warm up track
         </label>
         <br />
         <input
@@ -63,78 +63,7 @@ exports[`TrackFullCard component renders UI as expected 1`] = `
           Cooling track
         </label>
         <br />
-        <input
-          className="input"
-          name="heat-rising-track"
-          onClick={[Function]}
-          type="checkbox"
-        />
-        <label>
-          Heat rising track
-        </label>
-        <br />
-        <input
-          className="input"
-          name="energizing-track"
-          onClick={[Function]}
-          type="checkbox"
-        />
-        <label>
-          Energizing track
-        </label>
-        <br />
-        <input
-          className="input"
-          name="strengthening-track"
-          onClick={[Function]}
-          type="checkbox"
-        />
-        <label>
-          Strengthening track
-        </label>
-      </div>
-      <div
-        className="row2"
-      >
-        <input
-          className="input"
-          name="relaxing-track"
-          onClick={[Function]}
-          type="checkbox"
-        />
-        <label>
-          Relaxing track
-        </label>
-        <br />
-        <input
-          className="input"
-          name="releasing-track"
-          onClick={[Function]}
-          type="checkbox"
-        />
-        <label>
-          Releasing preassure track
-        </label>
-        <br />
-        <input
-          className="input"
-          name="stabilizing-track"
-          onClick={[Function]}
-          type="checkbox"
-        />
-        <label>
-          Stabilizing track
-        </label>
-        <br />
-        <input
-          className="input"
-          name="flexibility-track"
-          onClick={[Function]}
-          type="checkbox"
-        />
-        <label>
-          Flexcibility building track
-        </label>
+       
       </div>
     </div>
     <div
