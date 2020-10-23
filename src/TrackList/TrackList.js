@@ -28,7 +28,6 @@ export default class TrackList extends React.Component {
                 key={track.id}
                 id={track.id}
                 name={track.name_eng}
-                sanskrit={track.name_san}
                 img={track.img}
             />;
         });

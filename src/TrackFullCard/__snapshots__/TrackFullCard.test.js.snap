@@ -20,10 +20,6 @@ exports[`TrackFullCard component renders UI as expected 1`] = `
     className="text-container"
   >
     <p>
-      BENEFITS : 
-    </p>
-    <br />
-    <p>
       LEVEL : 
     </p>
     <br />
@@ -32,17 +28,7 @@ exports[`TrackFullCard component renders UI as expected 1`] = `
     </p>
     <br />
   </div>
-  <div
-    className="iframe-container"
-  >
-    <iframe
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen={true}
-      className="resp-iframe"
-      frameBorder="0"
-      title="trail film"
-    />
-  </div>
+  
   <form
     onSubmit={[Function]}
   >

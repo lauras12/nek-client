@@ -132,7 +132,7 @@ export default class TrackFullCard extends React.Component {
     }
 
     render() {
-        const { name_eng, alias, name_san, benefits, track_type, track_level, video } = this.context.openTrackCard;
+        const { name_eng, alias, track_type, track_level } = this.context.openTrackCard;
 
         return (
             <div className='track-info'>
@@ -141,21 +141,13 @@ export default class TrackFullCard extends React.Component {
                 </div>
                 <h3 className='title' >{name_eng}</h3>
                 <h3 className='title' >{alias}</h3>
-                <h3 className='title'>{name_san}</h3>
                 <div className='text-container'>
-                    <p>BENEFITS : {benefits}</p>
-                    <br />
                     <p>LEVEL : {track_level}</p>
                     <br />
                     <p>TRACK TYPE : {track_type}</p>
                     <br />
                 </div>
-                <div className='iframe-container'>
-                    <iframe className='resp-iframe' src={video} frameBorder="0" title='trail film'
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen>
-                    </iframe>
-                </div>
+                
                 <form onSubmit={this.handleSubmit}>
                     <h3 className='title' >Pick attributes:</h3>
                     <div className='attributes-container'>

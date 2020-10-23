@@ -36,22 +36,14 @@ export class HikeContextProvider extends React.Component {
                 id: null,
                 title: '',
                 assignedTracks: [],
-                warmUp: [],
-                midHike: [],
-                peakTrack: [],
-                breakTracks: [],
-                afterPeak: [],
             },
             openTrackCard: {
                 id: null,
                 name_eng: '',
                 alias: '',
-                name_san: '',
-                benefits: '',
                 track_type: '',
                 track_level: '',
                 img: '',
-                video: '',
                 attributesList: '',
                 notes: '',
 
@@ -77,12 +69,6 @@ export class HikeContextProvider extends React.Component {
             currentHike: {
                 id: hike.id,
                 title: hike.title,
-                assignedTracks: [],
-                peakTrack: [],
-                warmUp: [],
-                midHike: [],
-                breakTracks: [],
-                afterPeak: [],
             }
         });
     }
@@ -117,12 +103,9 @@ export class HikeContextProvider extends React.Component {
                 id: data.id,
                 name_eng: data.name_eng,
                 alias: data.alias,
-                name_san: data.name_san,
-                benefits: data.benefits,
                 track_type: data.track_type,
                 track_level: data.track_level,
                 img: data.img,
-                video: data.video,
                 attributesList: data.attributesList,
                 notes: data.notes,
             }

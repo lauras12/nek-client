@@ -6,8 +6,7 @@ import {BrowserRouter as BR} from 'react-router-dom';
 
 describe('TrackListItem component', () => {
     const props = {
-        name: 'chair',
-        sanskrit: 'utkatasana',
+        name: 'Bar Hill',
         img: '',
         location: {pathname: '/'},
         history: {push : '/'}
