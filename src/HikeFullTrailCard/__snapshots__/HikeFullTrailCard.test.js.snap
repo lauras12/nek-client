@@ -7,9 +7,6 @@ exports[`HikeFullTrailCard component renders UI as expected 1`] = `
   <h3
     className="title"
   />
-  <h3
-    className="title"
-  />
   <div
     className="text-container"
   >
@@ -22,7 +19,6 @@ exports[`HikeFullTrailCard component renders UI as expected 1`] = `
     </p>
     <br />
   </div>
-  
   <div
     className="bt-container"
   >

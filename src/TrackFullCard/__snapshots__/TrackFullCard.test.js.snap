@@ -13,9 +13,6 @@ exports[`TrackFullCard component renders UI as expected 1`] = `
   <h3
     className="title"
   />
-  <h3
-    className="title"
-  />
   <div
     className="text-container"
   >
@@ -28,44 +25,9 @@ exports[`TrackFullCard component renders UI as expected 1`] = `
     </p>
     <br />
   </div>
-  
   <form
     onSubmit={[Function]}
   >
-    <h3
-      className="title"
-    >
-      Pick attributes:
-    </h3>
-    <div
-      className="attributes-container"
-    >
-      <div
-        className="row1"
-      >
-        <input
-          className="input"
-          name="warmup-track"
-          onClick={[Function]}
-          type="checkbox"
-        />
-        <label>
-          Warm up track
-        </label>
-        <br />
-        <input
-          className="input"
-          name="cooling-track"
-          onClick={[Function]}
-          type="checkbox"
-        />
-        <label>
-          Cooling track
-        </label>
-        <br />
-       
-      </div>
-    </div>
     <div
       className="note-container"
     >
@@ -81,53 +43,11 @@ exports[`TrackFullCard component renders UI as expected 1`] = `
         value=""
       />
     </div>
-    <div
-      className="options-container"
+    <button
+      onClick={[Function]}
     >
-      <select
-        className="form__field2"
-        name="hike-menu"
-        onChange={[Function]}
-        required={true}
-      >
-        <option
-          required={true}
-          value=""
-        >
-          Save to my hike as:
-        </option>
-        <option
-          value="1"
-        >
-          warm up track
-        </option>
-        <option
-          value="3"
-        >
-          break track
-        </option>
-        <option
-          value="4"
-        >
-          peak track
-        </option>
-        <option
-          value="2"
-        >
-           mid-hike track
-        </option>
-        <option
-          value="5"
-        >
-           after-peak stabilizing track
-        </option>
-      </select>
-      <button
-        onClick={[Function]}
-      >
-        Back
-      </button>
-    </div>
+      Back
+    </button>
   </form>
 </div>
 `;

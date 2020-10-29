@@ -20,7 +20,7 @@ exports[`OpeningForm component renders UI as expected 1`] = `
         <h3
           className="hike-choice"
         >
-          Create a new hike:
+          Create a new hike: 
         </h3>
         <input
           className="form__field"

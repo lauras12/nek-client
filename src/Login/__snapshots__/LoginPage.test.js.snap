@@ -2,7 +2,7 @@
 
 exports[`LoginPage component renders UI as expected 1`] = `
 <div
-  className="current-flow"
+  className="current-hike"
 >
   <h2
     className="title"

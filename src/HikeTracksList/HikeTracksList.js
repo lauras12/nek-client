@@ -43,7 +43,7 @@ export default class HikeTracksList extends React.Component {
         
         const hikeTracks = orderedIds.map(element => element.map((track, index) => {
             return (
-                < HikeItem
+                <HikeItem
                     key={index}
                     {...this.props} 
                     trackId={track.id}

@@ -3,7 +3,7 @@ import ReactDom from 'react-dom';
 import renderer from 'react-test-renderer';
 import HikeTracksList from './HikeTracksList';
 import {BrowserRouter as BR} from 'react-router-dom';
-import { TrailContextProvider as TCP } from '../Context';
+import { HikeContextProvider as TCP } from '../Context';
 
 describe('HikeTracksList component', () => {
     const props = {

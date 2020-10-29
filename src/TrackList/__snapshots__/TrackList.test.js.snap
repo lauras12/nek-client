@@ -10,10 +10,10 @@ exports[`TrackList component renders UI as expected 1`] = `
   <h2
     className="title"
   >
-    TRACK LIBRARY: 
+    TRACKS LIBRARY: 
   </h2>
   <ul
-    className="track-container"
+    className="tracks-container"
   />
 </div>
 `;
