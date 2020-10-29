@@ -13,7 +13,7 @@ describe('HikeTracksList component', () => {
     
     it ('renders without crashing',() => {
         const div = document.createElement('div');
-        ReactDom.render(<BR><YCP><HikeTracksList {...props} /></YCP></BR>, div);
+        ReactDom.render(<BR><TCP><HikeTracksList {...props} /></TCP></BR>, div);
         ReactDom.unmountComponentAtNode(div);
     });
 
