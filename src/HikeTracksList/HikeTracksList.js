@@ -34,11 +34,11 @@ export default class HikeTracksList extends React.Component {
         let currentHikeTracksIds = this.context.currentHike.assignedTracks;
         const { tracks } = this.context;
 
-        let orderedIds = currentHikeTracksIds.map(element => {
-            return element.map(id => {
+        let orderedIds = currentHikeTracksIds ? currentHikeTracksIds.map(element => {
+            return element.length > 0 && element.map(id => {
                 return tracks.find(track => track.id === id);
             });
-        });
+        }) : []; 
            
         
         const hikeTracks = orderedIds.map(element => element.map((track, index) => {
