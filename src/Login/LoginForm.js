@@ -71,11 +71,11 @@ export default class LoginForm extends React.Component {
                 </div>
                 <form onSubmit={this.handleLogin}>
                     <div className='section'>
-                        <input className='inp' type='text' id='userName' placeholder='username' onClick={this.handleUsenNameCleanUp}>
+                        <input className='inp' type='text' id='userName' placeholder='username' onClick={this.handleUsenNameCleanUp} required>
                         </input>
                     </div>
                     <div className='section'>
-                        <input className='inp' type='password' placeholder='password' id='password' onClick={this.handlePasswordCleanUp}>
+                        <input className='inp' type='password' placeholder='password' id='password' onClick={this.handlePasswordCleanUp} required>
                         </input>
                     </div>
                     <button className='login-button' type="reset" onClick={this.handleAfterErrorDisplay}>Reset</button>

@@ -79,7 +79,7 @@ export default class RegisterForm extends React.Component {
                 </div>
                 <form onSubmit={this.handleSubmit}>
                     <div className='section'>
-                        <input name='full_name' type='text' placeholder='full name' onClick={this.handleFullNameCleanUp}/>
+                        <input name='full_name' type='text' placeholder='full name' required onClick={this.handleFullNameCleanUp}/>
                     </div>
 
                     <div className='section'>
