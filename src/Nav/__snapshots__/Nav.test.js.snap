@@ -9,7 +9,7 @@ exports[`Nav component renders UI as expected 1`] = `
     href="/login"
     onClick={[Function]}
   >
-    Login
+    Login___
   </a>
   <a
     className="register"

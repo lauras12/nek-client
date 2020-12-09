@@ -18,6 +18,7 @@ exports[`LoginForm component renders UI as expected 1`] = `
         id="userName"
         onClick={[Function]}
         placeholder="username"
+        required={true}
         type="text"
       />
     </div>
@@ -29,6 +30,7 @@ exports[`LoginForm component renders UI as expected 1`] = `
         id="password"
         onClick={[Function]}
         placeholder="password"
+        required={true}
         type="password"
       />
     </div>

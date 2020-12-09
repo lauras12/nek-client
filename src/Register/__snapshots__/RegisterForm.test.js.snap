@@ -17,6 +17,7 @@ exports[`RegisterForm component renders UI as expected 1`] = `
         name="full_name"
         onClick={[Function]}
         placeholder="full name"
+        required={true}
         type="text"
       />
     </div>
