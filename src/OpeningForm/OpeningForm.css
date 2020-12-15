@@ -1,4 +1,92 @@
-.form-container {
+/*.form-container {
     background-color:rgb(243, 240, 239); 
     padding-bottom: 30px;
 }
+
+.opening-form {
+    padding: 10px;    
+}
+
+.form__group {
+  padding: 15px 0 0;
+}
+ .form__group1 {
+    padding: 0;
+ }
+.form__field {
+  width: 60%;
+  font-family: inherit;
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+  font-size: 1rem;
+  color: grey;
+  padding: 7px 0;
+  background: transparent;  
+  transition: border-color 0.2s;
+  margin: 5px;
+}
+
+placeholder {
+    color: transparent; 
+}
+
+.hike-form {
+    display:flex;
+    justify-content: space-between;
+    margin: auto;
+ 
+}
+
+.hike-selection {
+    display:flex;
+    justify-content: space-between;
+    margin: auto; 
+   
+}
+
+.form-small-container {
+    flex:3;
+    display: inline;
+}
+
+.button-container {
+    flex:1;
+    display: inline;
+    vertical-align: bottom;
+}
+
+@media (min-width: 800px) {
+    .opening-form {
+        padding: 20px;
+        width: 65%;
+        margin: auto;
+        justify-content: space-around; 
+        display: flex;
+    }
+
+    .hike-form {
+        margin: 10px;
+        flex: 1;
+        padding: 5px;
+        display: flex;
+        margin-left: 5%;
+    }
+
+    .hike-selection {
+        margin: 10px;
+        flex:1;
+        padding: 5px;
+        display: flex;
+        margin-left: 5%;
+    }
+   
+    .form-small-container {
+        flex:3;
+    }
+    
+    .button-container {
+        flex: 1;
+    }
+}
+*/

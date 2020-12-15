@@ -1,0 +1,21 @@
+.current-hike {
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+
+@media(min-width: 600px) {
+    .current-hike {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #hike-button {
+        margin-left: 40px;
+    }
+}

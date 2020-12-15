@@ -28,6 +28,7 @@ export default class TrackList extends React.Component {
                 key={track.id}
                 id={track.id}
                 name={track.name_eng}
+                sanskrit={track.name_san}
                 img={track.img}
             />;
         });
@@ -37,7 +38,7 @@ export default class TrackList extends React.Component {
                 <div className='error'>
                     {this.state.error ? this.state.error.message : null}
                 </div>
-                <h2 className='title' >TRACKS LIBRARY: </h2>
+                <h2 className='title'>TRACKS LIBRARY: </h2>
                 <ul className='tracks-container'>
                     {tracks}
                 </ul>

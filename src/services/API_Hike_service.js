@@ -4,7 +4,7 @@ import TokenService from './token-service';
 const APIHikeCalls = {
 
     getAllUserHikes: () => {
-        const URL = config.API_ENDPOINT + '/hike';
+        const URL = config.API_ENDPOINT + '/hikes';
         return fetch(URL, {
                 headers: {
                     'Authorization': `bearer ${TokenService.getAuthToken()}`

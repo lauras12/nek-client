@@ -98,12 +98,12 @@ export default class OpeningForm extends React.Component {
                         <div className='form-small-container'>
                             <h3 className='hike-choice'>Choose exisiting hike: </h3>
                             <select className="form__field" onChange={this.onSelectHike}>
-                                <option value=''>Pick a hike</option>
+                                <option value=''>Pick a hike!</option>
                                 {hikeListName}
                             </select>
                         </div>
                         <div className='button-container'>
-                            {this.state.selection === null ? <button disabled={!this.state.selection} className='disabled' onClick={this.enterHike}> enter</button> : <button onClick={this.enterHike}> enter</button>}
+                            {this.state.selection === null ? <button disabled={!this.state.selection} className='disabled' onClick={this.enterHike}> enter</button> : <button onClick={this.enterHike}>enter</button>}
                         </div>
                     </div>
                         : null}
