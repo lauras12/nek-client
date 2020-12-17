@@ -25,7 +25,6 @@ function TrackListItem(props) {
         <div className='item' >
             <li className='li' onClick={() => handleClick()}>
                 <h2>{props.name}</h2>
-                <h2>{props.sanskrit}</h2>
                 <img src={props.img} alt='track, hill'/>
             </li>
         </div>

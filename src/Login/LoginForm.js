@@ -41,7 +41,7 @@ export default class LoginForm extends React.Component {
         });
     }
 
-    handleUsenNameCleanUp = (e) => {
+    handleUserNameCleanUp = (e) => {
         e.preventDefault();
         let userName = e.target;
         if (userName.value !== null) {
@@ -71,7 +71,7 @@ export default class LoginForm extends React.Component {
                 </div>
                 <form onSubmit={this.handleLogin}>
                     <div className='section'>
-                        <input className='inp' type='text' id='userName' placeholder='username' onClick={this.handleUsenNameCleanUp} required>
+                        <input className='inp' type='text' id='userName' placeholder='username' onClick={this.handleUserNameCleanUp} required>
                         </input>
                     </div>
                     <div className='section'>

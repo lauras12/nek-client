@@ -96,7 +96,7 @@ const APIHikeCalls = {
             .then(res => res.json());
     },
 
-    getAllTrackInHike: (hikeId) => {
+    getAllTracksInHike: (hikeId) => {
         const URL = config.API_ENDPOINT + `/hikes/${hikeId}`;
         return fetch(URL, {
                 headers: {

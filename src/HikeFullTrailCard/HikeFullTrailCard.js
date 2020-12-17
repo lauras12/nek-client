@@ -47,7 +47,7 @@ export default class HikeFullTrailCard extends React.Component {
     }
 
     render() {
-        const { name_eng, name_san, benefits, track_type, track_level, video, attributesList, notes } = this.context.openTrackCard;
+        const { name_eng, benefits, track_type, track_level, video, attributesList, notes } = this.context.openTrackCard;
 
         if (attributesList || notes) {
             const list = attributesList.map((att, index) => {
@@ -67,7 +67,6 @@ export default class HikeFullTrailCard extends React.Component {
                         {this.state.error ? this.state.error.message : null}
                     </div>
                     <h3 className='title' >{name_eng}</h3>
-                    <h3 className='title'>{name_san}</h3>
                     <div className='text-container2'>
                         <p>BENEFITS : {benefits}</p>
                         <br />
@@ -103,7 +102,6 @@ export default class HikeFullTrailCard extends React.Component {
         return (
             <div className='track-info'>
                 <h3 className='title' >{name_eng}</h3>
-                <h3 className='title'>{name_san}</h3>
                 <div className='text-container'>
                     <p>BENEFITS : {benefits}</p>
                     <br />

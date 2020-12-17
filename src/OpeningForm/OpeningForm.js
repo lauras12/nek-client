@@ -58,7 +58,7 @@ export default class OpeningForm extends React.Component {
     enterHike = () => {
         
         const hike = this.context.hikes.find(hike => hike.title === this.state.selection);
-       console.log('here')
+        console.log('here')
         this.context.setCurrentHike(hike)
         this.context.enterHike(hike);
        

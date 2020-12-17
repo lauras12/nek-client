@@ -17,7 +17,7 @@ export default class HikeTracksList extends React.Component {
         if(!hikeId) {
             this.props.history.push('/')
         } else {
-            APIHikeCalls.getAllTrackInHike(hikeId)
+            APIHikeCalls.getAllTracksInHike(hikeId)
             .then(data => {
                 this.context.setCurrentHike(data);
             })

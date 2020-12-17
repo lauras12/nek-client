@@ -1,8 +1,6 @@
 import React from 'react';
 import AuthCalls from '../services/Auth_service';
 
-
-
 export default class RegisterForm extends React.Component {
     state = {
         error: null,

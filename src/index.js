@@ -4,13 +4,13 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {HikeContextProvider} from './Context';
+import {TrailContextProvider} from './Context';
 
 ReactDOM.render(
     <BrowserRouter>
-         <HikeContextProvider>
+         <TrailContextProvider>
                     <App />
-            </HikeContextProvider>
+            </TrailContextProvider>
     </BrowserRouter>,
     
     document.getElementById('root')
