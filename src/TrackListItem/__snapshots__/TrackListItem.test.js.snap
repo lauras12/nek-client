@@ -12,7 +12,7 @@ exports[`TrackListItem component renders UI as expected 1`] = `
       Bar Hill
     </h2>
     <img
-      alt="track, asana"
+      alt="track"
       src=""
     />
   </li>
