@@ -35,6 +35,7 @@ export default class OpeningForm extends React.Component {
         } else {
             APIHikeCalls.postNewHike(newHike)
                 .then(data => {
+                    console.log(data);
                     newHikeName.value = '';
                     this.context.setCurrentHike(data);
                     this.props.history.push('/hike');

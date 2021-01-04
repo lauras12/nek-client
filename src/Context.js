@@ -92,6 +92,7 @@ export class TrailContextProvider extends React.Component {
     }
 
     setCurrentHike = (hike) => {
+        console.log(hike);
         this.setState({
             currentHikeId: hike.id,
             currentHike: hike,
@@ -99,6 +100,7 @@ export class TrailContextProvider extends React.Component {
     }
     
     setTracksList = (data) => {
+        console.log(data);
         this.setState({
             tracks: data,
         });

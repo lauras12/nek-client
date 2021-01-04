@@ -24,9 +24,8 @@ function TrackListItem(props) {
     return (
         <div className='item' >
             <li className='li' onClick={() => handleClick()}>
-                <h2>{props.nameEng}</h2>
+                <h2>{props.name}</h2>
                 <img src={props.img} alt='track'/>
-                <h2>{props.alias}</h2>
             </li>
         </div>
     );

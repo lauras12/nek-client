@@ -1,6 +1,9 @@
 import config from '../config';
 import TokenService from './token-service';
 
+function adaptTrack(track) {
+    return { ...track, img: config.API_ENDPOINT+track.img }
+  }
 
 const APITrackCalls = {
 
@@ -18,7 +21,8 @@ const APITrackCalls = {
                 }
                 return res;
             })
-            .then(res => res.json());
+            .then(res => res.json())
+            .then(tracks => tracks.map(adaptTrack));
     },
 
     insertTrackAttributes: (element) => {

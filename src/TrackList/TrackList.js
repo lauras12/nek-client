@@ -13,6 +13,7 @@ export default class TrackList extends React.Component {
     componentDidMount = () => {
         APITrackCalls.getAllTracksData()
             .then(data => {
+                console.log(data);
                 this.context.setTracksList(data);
             })
             .catch(res => {
@@ -23,16 +24,17 @@ export default class TrackList extends React.Component {
     }
 
     render() {
+
         const tracks = this.context.tracks.map(track => {
             return <TrackListItem
                 key={track.id}
                 id={track.id}
-                name={track.name_eng}
+                name={track.alias}
                 img={track.img}
             />;
             
         });
-        console.log({tracks});
+        console.log(tracks);
         return (
             <div className='track-list'>
                 <div className='error'>
@@ -40,7 +42,7 @@ export default class TrackList extends React.Component {
                 </div>
                 <h2 className='title'>TRACKS LIBRARY: </h2>
                 <ul className='tracks-container'>
-                   {tracks}
+                    {tracks}
                 </ul>
             </div>
         );
