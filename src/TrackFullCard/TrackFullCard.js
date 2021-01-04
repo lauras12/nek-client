@@ -149,12 +149,7 @@ export default class TrackFullCard extends React.Component {
                     <p>TRACK TYPE : {track_type}</p>
                     <br />
                 </div>
-                <div className='iframe-container'>
-                    <iframe className='resp-iframe' src={video} frameBorder="0" title='trail film'
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen>
-                    </iframe>
-                </div>
+              
                 <form onSubmit={this.handleSubmit}>
                     <h3 className='title' >Pick attributes:</h3>
                     <div className='attributes-container'>
