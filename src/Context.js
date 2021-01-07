@@ -50,7 +50,6 @@ export class TrailContextProvider extends React.Component {
                 track_type: '',
                 track_level: '',
                 img: '',
-                video: '',
                 attributesList: '',
                 notes: '',
 
@@ -122,7 +121,6 @@ export class TrailContextProvider extends React.Component {
                 track_type: data.track_type,
                 track_level: data.track_level,
                 img: data.img,
-                video: data.video,
                 attributesList: data.attributesList,
                 notes: data.notes,
             }
