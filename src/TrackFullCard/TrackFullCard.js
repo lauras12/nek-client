@@ -132,7 +132,7 @@ export default class TrackFullCard extends React.Component {
     }
 
     render() {
-        const { name_eng, alias, benefits, track_type, track_level, video } = this.context.openTrackCard;
+        const { name_eng, alias, benefits, track_type, track_level } = this.context.openTrackCard;
 
         return (
             <div className='track-info'>
