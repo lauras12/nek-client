@@ -28,7 +28,7 @@
   "scripts": {
     "start": "react-dotenv && react-scripts start",
     "prebuild": "CI=true react-scripts test --colors",
-    "build": "react-scripts build",
+    "build": "NODE_ENV=production && react-scripts build",
     "test": "react-scripts test dotenv_config_path=.env",
     "eject": "react-scripts eject"
   },
