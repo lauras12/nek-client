@@ -11,6 +11,10 @@ exports[`HikeFullTrailCard component renders UI as expected 1`] = `
     className="text-container"
   >
     <p>
+      BENEFITS : 
+    </p>
+    <br />
+    <p>
       LEVEL : 
     </p>
     <br />

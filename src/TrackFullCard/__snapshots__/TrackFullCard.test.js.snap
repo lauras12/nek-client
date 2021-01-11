@@ -17,6 +17,10 @@ exports[`TrackFullCard component renders UI as expected 1`] = `
     className="text-container"
   >
     <p>
+      BENEFITS : 
+    </p>
+    <br />
+    <p>
       LEVEL : 
     </p>
     <br />
@@ -28,6 +32,111 @@ exports[`TrackFullCard component renders UI as expected 1`] = `
   <form
     onSubmit={[Function]}
   >
+    <h3
+      className="title"
+    >
+      Pick attributes:
+    </h3>
+    <div
+      className="attributes-container"
+    >
+      <div
+        className="row1"
+      >
+        <input
+          className="input"
+          name="grounding-track"
+          onClick={[Function]}
+          type="checkbox"
+        />
+        <label>
+          Grounding track
+        </label>
+        <br />
+        <input
+          className="input"
+          name="cooling-track"
+          onClick={[Function]}
+          type="checkbox"
+        />
+        <label>
+          Cooling track
+        </label>
+        <br />
+        <input
+          className="input"
+          name="heat-rising-track"
+          onClick={[Function]}
+          type="checkbox"
+        />
+        <label>
+          Heat rising track
+        </label>
+        <br />
+        <input
+          className="input"
+          name="energizing-track"
+          onClick={[Function]}
+          type="checkbox"
+        />
+        <label>
+          Energizing track
+        </label>
+        <br />
+        <input
+          className="input"
+          name="strengthening-track"
+          onClick={[Function]}
+          type="checkbox"
+        />
+        <label>
+          Strengthening track
+        </label>
+      </div>
+      <div
+        className="row2"
+      >
+        <input
+          className="input"
+          name="relaxing-track"
+          onClick={[Function]}
+          type="checkbox"
+        />
+        <label>
+          Relaxing track
+        </label>
+        <br />
+        <input
+          className="input"
+          name="releasing-track"
+          onClick={[Function]}
+          type="checkbox"
+        />
+        <label>
+          Releasing preassure track
+        </label>
+        <br />
+        <input
+          className="input"
+          name="stabilizing-track"
+          onClick={[Function]}
+          type="checkbox"
+        />
+        <label>
+          Stabilizing track
+        </label>
+        <br />
+        <input
+          className="input"
+          name="flexibility-track"
+          onClick={[Function]}
+          type="checkbox"
+        />
+        <label>
+          Flexcibility building track
+        </label>
+      </div>
+    </div>
     <div
       className="note-container"
     >
@@ -43,11 +152,53 @@ exports[`TrackFullCard component renders UI as expected 1`] = `
         value=""
       />
     </div>
-    <button
-      onClick={[Function]}
+    <div
+      className="options-container"
     >
-      Back
-    </button>
+      <select
+        className="form__field2"
+        name="hike-menu"
+        onChange={[Function]}
+        required={true}
+      >
+        <option
+          required={true}
+          value=""
+        >
+          Save to my hike as:
+        </option>
+        <option
+          value="1"
+        >
+          warm up track
+        </option>
+        <option
+          value="3"
+        >
+          break track
+        </option>
+        <option
+          value="4"
+        >
+          peak track
+        </option>
+        <option
+          value="2"
+        >
+           mid-hike track
+        </option>
+        <option
+          value="5"
+        >
+           after-peak stabilizing track
+        </option>
+      </select>
+      <button
+        onClick={[Function]}
+      >
+        Back
+      </button>
+    </div>
   </form>
 </div>
 `;
