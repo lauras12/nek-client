@@ -13,7 +13,7 @@ export default class TrackList extends React.Component {
     componentDidMount = () => {
         APITrackCalls.getAllTracksData()
             .then(data => {
-                console.log(data);
+               // console.log(data);
                 this.context.setTracksList(data);
             })
             .catch(res => {
@@ -34,7 +34,7 @@ export default class TrackList extends React.Component {
             />;
             
         });
-        console.log(tracks);
+        // console.log(tracks);
         return (
             <div className='track-list'>
                 <div className='error'>

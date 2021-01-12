@@ -99,7 +99,7 @@ export class TrailContextProvider extends React.Component {
     }
     
     setTracksList = (data) => {
-        console.log(data);
+       // console.log(data);
         this.setState({
             tracks: data,
         });

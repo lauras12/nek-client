@@ -35,13 +35,13 @@ export default class OpeningForm extends React.Component {
         } else {
             APIHikeCalls.postNewHike(newHike)
                 .then(data => {
-                    console.log(data);
+                   // console.log(data);
                     newHikeName.value = '';
                     this.context.setCurrentHike(data);
                     this.props.history.push('/hike');
                 })
                 .catch(res => {
-                    console.log(res);
+                  //  console.log(res);
                     this.setState({
                         error: res,
                     });
@@ -59,7 +59,7 @@ export default class OpeningForm extends React.Component {
     enterHike = () => {
         
         const hike = this.context.hikes.find(hike => hike.title === this.state.selection);
-        console.log('here')
+       // console.log('here')
         this.context.setCurrentHike(hike)
         this.context.enterHike(hike);
        
