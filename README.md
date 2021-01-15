@@ -7,8 +7,8 @@ Trail Track is a Full-Stack mobile first responsive web application for all hike
 ## WHY MAKE THIS APP?
 As someone who loves to journal and wanted a way ot keep track of all of her kies without writing htem down every time, Trail Track was created.  This app was also inspried by being able to be a sort of online journal keeping of hikes.
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/k0FZwFZ/Trail-Track1.png" alt="Trail-Track1" border="0"></a>
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/wWLTg3d/Trail-Track2.png" alt="Trail-Track2" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br />
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/k0FZwFZ/Trail-Track1.png" alt="Trail-Track1" border="0" width='400'></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/wWLTg3d/Trail-Track2.png" alt="Trail-Track2" border="0" width='400'></a><br /><a target='_blank' href='https://imgbb.com/'></a><br />
 
 
 ## ENDPOINTS AND EXPECTED DATA
