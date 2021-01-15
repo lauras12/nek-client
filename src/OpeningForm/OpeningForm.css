@@ -1,5 +1,5 @@
-/*.form-container {
-    background-color:rgb(243, 240, 239); 
+.form-container {
+    background-color:rgb(194, 227, 245); 
     padding-bottom: 30px;
 }
 
@@ -89,4 +89,3 @@ placeholder {
         flex: 1;
     }
 }
-*/

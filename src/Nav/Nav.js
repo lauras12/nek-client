@@ -24,7 +24,7 @@ export default class Nav extends React.Component {
       return (
         <div className='nav'>
           <Link to={'/login'} className='link' >
-            Login___   
+            Login   
            </Link>
           <Link to={'/register'} className='register'>
             Register

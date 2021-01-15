@@ -1,0 +1,32 @@
+.bt-container {
+    margin: 20px;
+}
+
+.track-info {
+    background-color: rgb(233, 224, 231); 
+    text-align: center; 
+    padding-top: 30px; 
+    padding-bottom: 30px;
+    margin: auto;
+    margin-bottom: 40px;
+    filter: drop-shadow(0 0 0.75rem rgb(151, 132, 136));
+}
+
+.text-container2{
+    width: 55%;
+    text-align: left;
+    margin: auto;
+    padding: 20px;
+}
+
+@media (min-width: 800px) {
+    .track-info {
+        max-width: 75%;
+        background-color: rgb(233, 224, 231); 
+        padding-top: 30px; 
+        padding-bottom: 30px; 
+        margin: auto;
+        margin-bottom: 40px;
+        filter: drop-shadow(0 0 0.75rem rgb(151, 132, 136));
+    }
+}  
