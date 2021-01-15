@@ -362,21 +362,6 @@ As someone who loves to journal and wanted a way ot keep track of all of her kie
 * Mocha - back-end testing framework
 * Chai - assertion library backend testing
 * Enzyme - React.js testing utility
-* Zeit - cloud platform for static sites
 * Heroku - cloud application platform
 
-## FUTURE IMPROVEMENTS
-
-### UI IMPROVEMENTS
-* significatly bigger tracks library
-* search bar for certain track by name
-
-### UX IMPROVEMENTS
-* abitlity to share hikes to social media
-
-### OTHER FRONT-END IMPROVEMENTS
-* Google and facebook login
-
-### SERVER-SIDE IMPROVEMENTS
-* login timeout
 
