@@ -14,7 +14,7 @@ const AuthCalls = {
             if (!res.ok) {
                 return res.json()
                 .then(err => {
-                    console.log(err);
+                 //   console.log(err);
                     throw new Error(err.error.message);
                 });
             }
@@ -37,7 +37,7 @@ const AuthCalls = {
             if(!res.ok) {
                 return res.json()
                 .then(err=> {
-                    console.log(err);
+                 //   console.log(err);
                     throw new Error(err.error.message);
                 });
             }

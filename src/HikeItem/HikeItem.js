@@ -13,7 +13,7 @@ export default class HikeItem extends React.Component {
     }
 
     deleteTrackFromHike = (id) => {
-        console.log('deleting', id);
+      // console.log('deleting', id);
         this.context.deleteTrackFromHike(id);
     }
     

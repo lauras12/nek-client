@@ -19,7 +19,7 @@ export default class HikeTracksList extends React.Component {
         } else {
             APIHikeCalls.getAllTracksInHike(hikeId)
             .then(data => {
-                console.log(data);
+            //    console.log(data);
                 this.context.setCurrentHike(data);
             })
             .catch(err => {
@@ -41,7 +41,7 @@ export default class HikeTracksList extends React.Component {
             });
         }) : [[], [], [], [], []]; 
            
-        console.log(this.context.currentHike);
+       // console.log(this.context.currentHike);
         const hikeTracks = orderedIds.map(element => element.map((track, index) => {
             return (
                 <HikeItem

@@ -21,9 +21,8 @@ export default function Header(props) {
 
             <div className='landing'>
               <h3 className='title'>Welcome to Trail Track!</h3>
-              <p>An app built to hikers track their next trail! New users should register to create an account.
+              <p>This app was built to help hiker track their next trail! New users should register to create an account.
               </p>
-              <h3 className='title'>Hello!</h3>
             </div>
         </div>
         

@@ -23,7 +23,7 @@ export default class RegisterForm extends React.Component {
                 this.props.onRegisterSuccess();
             })
             .catch(res => {
-                console.log(res);
+               // console.log(res);
                 this.setState({
                     error: res
                 });

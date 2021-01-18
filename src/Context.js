@@ -91,7 +91,7 @@ export class TrailContextProvider extends React.Component {
     }
 
     setCurrentHike = (hike) => {
-        console.log(hike);
+      //  console.log(hike);
         this.setState({
             currentHikeId: hike.id,
             currentHike: hike,
@@ -144,10 +144,10 @@ export class TrailContextProvider extends React.Component {
         const hikeAimed = this.state.currentHikeId;
         APIHikeCalls.deleteTrackFromHike(trackToDelete, hikeAimed)
             .then(res => {
-                console.log('deleting TRACK FROM HIKE');
+             //   console.log('deleting TRACK FROM HIKE');
             })
             .catch(err => {
-                console.log(err)
+             //   console.log(err)
                 this.setState({
                     error: err,
                 });
