@@ -113,7 +113,7 @@ exports[`TrackFullCard component renders UI as expected 1`] = `
           type="checkbox"
         />
         <label>
-          Releasing preassure track
+          Releasing pressure track
         </label>
         <br />
         <input
@@ -133,7 +133,7 @@ exports[`TrackFullCard component renders UI as expected 1`] = `
           type="checkbox"
         />
         <label>
-          Flexcibility building track
+          flexibility building track
         </label>
       </div>
     </div>

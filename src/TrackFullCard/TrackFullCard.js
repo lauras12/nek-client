@@ -141,14 +141,14 @@ export default class TrackFullCard extends React.Component {
                 </div>
                 <h3 className='title' >{name_eng}</h3>
                 <h3 className='title' >{alias}</h3>
-                <div className='text-container'>
+             {/*   <div className='text-container'>
                     <p>BENEFITS : {benefits}</p>
                     <br />
                     <p>LEVEL : {track_level}</p>
                     <br />
                     <p>TRACK TYPE : {track_type}</p>
                     <br />
-                </div>
+                </div> */}
               
                 <form onSubmit={this.handleSubmit}>
                     <h3 className='title' >Pick attributes:</h3>
@@ -180,7 +180,7 @@ export default class TrackFullCard extends React.Component {
 
                             <br />
                             <input className='input' type='checkbox' name='releasing-track' onClick={this.handleAddAttribute} />
-                            <label>Releasing preassure track</label>
+                            <label>Releasing pressure track</label>
 
                             <br />
                             <input className='input' type='checkbox' name='stabilizing-track' onClick={this.handleAddAttribute} />
@@ -188,7 +188,7 @@ export default class TrackFullCard extends React.Component {
 
                             <br />
                             <input className='input' type='checkbox' name='flexibility-track' onClick={this.handleAddAttribute} />
-                            <label>Flexcibility building track</label>
+                            <label>flexibility building track</label>
                         </div>
                     </div>
                     <div className='note-container'>

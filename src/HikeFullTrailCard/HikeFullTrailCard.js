@@ -67,14 +67,15 @@ export default class HikeFullTrailCard extends React.Component {
                         {this.state.error ? this.state.error.message : null}
                     </div>
                     <h3 className='title' >{name_eng}</h3>
-                    <div className='text-container2'>
+                 {/*    <div className='text-container2'>
                         <p>BENEFITS : {benefits}</p>
                         <br />
                         <p>LEVEL : {track_level}</p>
                         <br />
                         <p>TRACK TYPE : {track_type}</p>
                         <br />
-                    </div >
+                    </div > */}
+
   
                     <h3 className='title' >Saved Attributes List : </h3>
                     <div className='attributes-container'>
@@ -97,14 +98,14 @@ export default class HikeFullTrailCard extends React.Component {
         return (
             <div className='track-info'>
                 <h3 className='title' >{name_eng}</h3>
-                <div className='text-container'>
+               {/* <div className='text-container'>
                     <p>BENEFITS : {benefits}</p>
                     <br />
                     <p>LEVEL : {track_level}</p>
                     <br />
                     <p>TRACK TYPE : {track_type}</p>
                     <br />
-                </div>
+                </div>*/}
 
                 <div className='bt-container'>
                     <button onClick={this.handleBackButton} >Back</button>
