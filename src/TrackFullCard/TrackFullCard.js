@@ -25,7 +25,7 @@ export default class TrackFullCard extends React.Component {
     componentDidMount = () => {
         const { track_id } = this.props.match.params;
         const hikeId = this.context.currentHikeId;
-
+        if (hikeId)
         APITrackCalls.getFullTrackData(hikeId, track_id)
             .then(data => {
                 this.context.setOpenTrackCard(data);

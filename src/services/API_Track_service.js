@@ -74,6 +74,7 @@ const APITrackCalls = {
     },
 
     getFullTrackData: (hikeId, trackId) => {
+        console.log(hikeId, trackId);
         const URL = config.API_ENDPOINT + `/hike/${hikeId}/${trackId}`;
         return fetch(URL, {
             method: 'GET',
