@@ -20,8 +20,8 @@ export default function Header(props) {
             </header>
 
             <div className='landing'>
-              <h3 className='title'>Welcome to Trail Track!</h3>
-              <p>This app was built to help hiker track their next trail! New users should register to create an account.
+              <h3 className='title'>Welcome to Trail Track!</h3> <br/>
+              <p>This app was built to help hiker track their next trail! New users should register to create an account. <br/> <br/> Once logged in, new users should create a new hike and add different trails to each hike.  Users can select the attributes, add detailed and personalized notes, and then save that trail as a specific type to each hike.
               </p>
             </div>
         </div>
